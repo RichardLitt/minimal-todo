@@ -1,6 +1,6 @@
 {
   "name": "minimal-todo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minimal to do list organizer",
   "main": "today.sh",
   "scripts": {
@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/richardlitt/minimal-todo/issues"
   },
-  "homepage": "https://github.com/richardlitt/minimal-todo#readme"
+  "homepage": "https://github.com/richardlitt/minimal-todo#readme",
+  "coordinates": [
+    41.144411,
+    -8.6178165
+  ]
 }
