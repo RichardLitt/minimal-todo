@@ -2,10 +2,9 @@
 
 FILE="log/$(date +%Y-%m-%d).md"
 echo "# $(date +%Y-%m-%d)\n" >> $FILE
-cat "routines.md" >> $FILE
-echo "\n" >> $FILE
-cat "todo.md" | head -5 >> $FILE
-
-## TODO
-# - [ ] Send anything from yesterday's ## Tomorrow section into the new day
-# - [ ] Select an arbitrary of head tasks from the CLI
+cat "daily_routines.md" >> $FILE
+echo "\n## To Do\n" >> $FILE
+[ -f "log/$(date -v-1d +%Y-%m-%d).md" ] &&  sed '1,/## Tomorrow/d' "log/$(date -v-1d +%Y-%m-%d).md"| tail -n+2 >> $FILE || echo "Note: Yesterday not copied."
+awk '/# To Do/ {f=1} /----------/ {f=0} f' todo.md | tail -n+3 >> $FILE
+echo "Todos written, opening file..."
+open -a "Sublime Text" $FILE
