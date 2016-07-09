@@ -1,0 +1,24 @@
+{
+  "name": "minimal-todo",
+  "version": "1.0.0",
+  "description": "A minimal to do list organizer",
+  "main": "today.sh",
+  "scripts": {
+    "test": "sh today.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richardlitt/minimal-todo.git"
+  },
+  "keywords": [
+    "todo",
+    "minimal",
+    "shell"
+  ],
+  "author": "Richard Littauer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richardlitt/minimal-todo/issues"
+  },
+  "homepage": "https://github.com/richardlitt/minimal-todo#readme"
+}

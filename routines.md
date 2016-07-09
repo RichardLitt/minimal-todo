@@ -1,0 +1,4 @@
+## Routines
+
+- [ ] Make your bed
+
