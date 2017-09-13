@@ -1,5 +1,7 @@
 # minimal-todo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/RichardLitt/minimal-todo.svg)](https://greenkeeper.io/)
+
 > A minimal to do list organizer
 
 This is a minimal to do list script and folder system. Look at the example.
